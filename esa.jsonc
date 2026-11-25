@@ -1,0 +1,8 @@
+{
+  "name": "mosslight-expedition",
+  "installCommand": "",
+  "buildCommand": "",
+  "assets": {
+    "directory": "./"
+  }
+}
