@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+    <title>微光防线（Glimmer Defense）· 离线单机像素塔防官网</title>
+    <meta
+      name="description"
+      content="《微光防线》是一款离线单机像素塔防游戏。布置 11 种射击塔与 4 种拦截建筑，在五大区域 18 关风雪与毒沼中守住最后一枚微光水晶。支持安卓直装与 TapTap 下载。"
+    />
+    <meta name="theme-color" content="#142426" />
+    <meta property="og:title" content="微光防线（Glimmer Defense）· 离线单机像素塔防" />
+    <meta
+      property="og:description"
+      content="18 关五大区域手绘像素战役，11 种射击塔 + 4 种拦截建筑，16 种动态天气，离线单机无广告无内购。"
+    />
+    <meta property="og:image" content="./site/assets/cover.png" />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="./site/assets/icon.png" type="image/png" />
+    <link rel="stylesheet" href="./site/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#top" aria-label="微光防线首页">
+          <img class="brand-icon" src="./site/assets/icon.png" alt="微光防线图标" width="38" height="38" />
+          <span class="brand-text">
+            <strong>微光防线</strong>
+            <small>GLIMMER DEFENSE</small>
+          </span>
+        </a>
+        <nav class="site-nav" aria-label="主导航">
+          <a href="#features">玩法特色</a>
+          <a href="#regions">五大区域</a>
+          <a href="#gallery">实机截图</a>
+          <a href="#download">立即下载</a>
+          <a href="./privacy-policy.html">隐私政策</a>
+        </nav>
+        <a class="nav-cta" href="#download">下载游戏</a>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-backdrop" aria-hidden="true">
+          <img src="./site/assets/cover.png" alt="" />
+          <div class="hero-vignette"></div>
+          <div class="hero-sparks">
+            <span style="--x:14%;--y:28%;--d:0s"></span>
+            <span style="--x:26%;--y:64%;--d:-1.2s"></span>
+            <span style="--x:48%;--y:22%;--d:-2.5s"></span>
+            <span style="--x:72%;--y:34%;--d:-0.7s"></span>
+            <span style="--x:84%;--y:68%;--d:-3.1s"></span>
+            <span style="--x:61%;--y:78%;--d:-1.8s"></span>
+          </div>
+        </div>
+
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <div class="pill-row">
+              <span class="pill accent">v1.1.2 最新测试版</span>
+              <span class="pill">离线单机</span>
+              <span class="pill">无广告 · 无内购</span>
+            </div>
+            <h1>
+              在风雪与毒沼之间<br />
+              <span>守住最后一枚微光水晶</span>
+            </h1>
+            <p class="hero-lead">
+              手绘像素风格离线塔防。穿越林缘、苔岸、矿道、霜脊与毒沼五大区域 18 道防线，自由编组 11 种射击塔与 4 种拦截小队，配合动态天气、星辉天赋与战场机关迎战各区首领。
+            </p>
+
+            <div class="hero-actions">
+              <a
+                class="btn btn-taptap"
+                href="https://tap.cn/KZsUFX9M"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M4 6h16M12 6v12M8 14l4 4 4-4" />
+                </svg>
+                <span>
+                  <strong>TapTap 下载</strong>
+                  <small>前往官方页面 · 推荐</small>
+                </span>
+              </a>
+              <a
+                class="btn btn-android"
+                href="https://github.com/CatCatchFish/Mosslight/releases/download/v1.1.2/glimmer-defense-1.1.2-debug.apk"
+                download="glimmer-defense-1.1.2-debug.apk"
+              >
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 3v12m0 0-4-4m4 4 4-4M5 19h14" />
+                </svg>
+                <span>
+                  <strong>安卓 APK 下载</strong>
+                  <small>v1.1.2 · Android 7.0+ · 39 MB</small>
+                </span>
+              </a>
+            </div>
+
+            <div class="hero-metrics" aria-label="游戏核心规模">
+              <div><strong>18 关</strong><span>五大区域完整战役</span></div>
+              <div><strong>11 + 4</strong><span>射击塔与拦截建筑</span></div>
+              <div><strong>16 种</strong><span>实战动态天气</span></div>
+              <div><strong>19 处</strong><span>可互动景物音效</span></div>
+            </div>
+          </div>
+
+          <aside class="hero-qr-card" aria-label="TapTap 扫码下载">
+            <div class="qr-card-head">
+              <span class="qr-badge">TapTap 官方</span>
+              <span class="qr-sub">手机扫码直达</span>
+            </div>
+            <button
+              type="button"
+              class="qr-frame"
+              id="hero-qr-trigger"
+              aria-label="放大查看 TapTap 下载二维码"
+              title="点击放大二维码"
+            >
+              <img
+                src="./site/assets/taptap-qr.png"
+                alt="《微光防线》TapTap 下载二维码"
+                width="220"
+                height="220"
+              />
+            </button>
+            <p class="qr-caption">使用 TapTap App 或手机相机扫码<br />亦可直接访问 <a href="https://tap.cn/KZsUFX9M" target="_blank" rel="noopener noreferrer">tap.cn/KZsUFX9M</a></p>
+          </aside>
+        </div>
+      </section>
+
+      <section id="features" class="section">
+        <div class="container">
+          <div class="section-head">
+            <span class="kicker">GAMEPLAY HIGHLIGHTS</span>
+            <h2>克制、扎实的手绘像素塔防体验</h2>
+            <p>不设体力锁、不卖数值礼包，每一关的地形、怪物谱系、天气与机关都围绕纯粹的策略布防设计。</p>
+          </div>
+          <div class="feature-grid">
+            <article class="feature-card">
+              <div class="feature-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M4 19 9 6l6 8 5-9v14H4Z" /></svg>
+              </div>
+              <h3>11 种射击塔 · 双线四级专精</h3>
+              <p>每座射击塔拥有三级基础档与两条截然不同的四级专精分支，搭配 5 槽自由编队与高伤塔索敌优先级切换，衍生多套通关流派。</p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12 3 5 6v6c0 4.5 3 7.5 7 9 4-1.5 7-4.5 7-9V6l-7-3Z" /></svg>
+              </div>
+              <h3>4 种拦截小队 · 独立寻敌回血</h3>
+              <p>兔卫岗哨、霜银狮鹫、霜狼犬舍与苇篷哨舍各司其职，空地协同拦截、脱战自动回血，并拥有专属升级与集结机制。</p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M4 15a4 4 0 0 1 1-7.8A6 6 0 0 1 16.8 8 3.5 3.5 0 0 1 19 15H4Zm4 4 1-2m4 2 1-2m4 2 1-2" /></svg>
+              </div>
+              <h3>16 种天气 & 两步确认机关</h3>
+              <p>暴风雪、雷暴、毒瘴等恶劣天气真实影响射速、射程与移速；滚木、水闸、日轮镜阵、沉木拦栅与引灯信标助你关键时刻破局。</p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0-3 11.2V17h6v-2.8A6 6 0 0 0 12 3Zm-2 17h4" /></svg>
+              </div>
+              <h3>星辉天赋 & 19 处互动景物</h3>
+              <p>用通关星级点亮 6 条营地加护路线并可随时免费重置；木屋、矿灯、冰棱风铃、苔沼石偶等 19 种景物皆可点击触发专属音效。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="regions" class="section section-alt">
+        <div class="container">
+          <div class="section-head">
+            <span class="kicker">FIVE BIOMES · 18 STAGES</span>
+            <h2>五大区域完整战役，怪物严格不跨区</h2>
+            <p>从林场小径出发，沿主线逐步解锁新站点与新防御塔，每一章都有独立生态、环境底噪与区域首领。</p>
+          </div>
+          <div class="region-grid">
+            <article class="region-card" style="--region:#c9e494">
+              <div class="region-top"><span>第一章 · 01–03 关</span><strong>林缘岗哨</strong></div>
+              <p>松林小径与浅滩苇桥，初识弩箭、火炮、冰晶塔与兔卫岗哨，迎战松鬃巨豕。</p>
+            </article>
+            <article class="region-card" style="--region:#9fe6c9">
+              <div class="region-top"><span>第二章 · 04–06 关</span><strong>苔岸河湾</strong></div>
+              <p>双桥与三路湖岛水闸联动，解锁燧火塔与四级专精，决战河湾大首领裂谷领主。</p>
+            </article>
+            <article class="region-card" style="--region:#f5c58a">
+              <div class="region-top"><span>第三章 · 07–09 关</span><strong>弃采矿道</strong></div>
+              <p>赤岩旧矿轨、绞盘矿车与运渣换轨，解锁重弩、缚网、狮鹫巢塔与蓄光棱镜，对决熔轨巨擘。</p>
+            </article>
+            <article class="region-card" style="--region:#bce6ff">
+              <div class="region-top"><span>第四章 · 10–12 关</span><strong>霜脊高地</strong></div>
+              <p>暴风雪积雪覆盖景物，借日轮镜阵、雷鸣塔与霜狼犬舍，击破凛冬麋王的寒域冰封。</p>
+            </article>
+            <article class="region-card region-wide" style="--region:#b6da9e">
+              <div class="region-top"><span>第五章 · 13–18 关</span><strong>瘴雾毒沼</strong></div>
+              <p>六关完整终章战役：湿木栈道、泥炭孤岛与三路苔礁哨堡。启用苇篷哨舍、盐釉投罐塔、孢匣塔与倒潮闸/引灯信标，迎战腐冠瘴母与最终首领沉堤泽蛟。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="gallery" class="section">
+        <div class="container">
+          <div class="section-head">
+            <span class="kicker">IN-GAME SCREENSHOTS</span>
+            <h2>实机画面预览</h2>
+            <p>所有画面均截取自实机运行版本，点击任意截图可查看大图。</p>
+          </div>
+          <div class="gallery-grid" id="gallery-grid">
+            <figure class="shot-card">
+              <button type="button" class="shot-btn" data-shot="0" aria-label="查看大图：五大区域 18 关手绘像素大地图">
+                <img src="./site/assets/shot-01-map.png" alt="五大区域 18 关手绘像素大地图" loading="lazy" />
+              </button>
+              <figcaption>五大区域 18 关手绘像素大地图与闯关推进</figcaption>
+            </figure>
+            <figure class="shot-card">
+              <button type="button" class="shot-btn" data-shot="1" aria-label="查看大图：毒沼泥炭孤岛实战">
+                <img src="./site/assets/shot-02-mire.png" alt="第 15 关泥炭孤岛毒沼实战" loading="lazy" />
+              </button>
+              <figcaption>第五章「泥炭孤岛」双桥登岛与毒沼攻防</figcaption>
+            </figure>
+            <figure class="shot-card">
+              <button type="button" class="shot-btn" data-shot="2" aria-label="查看大图：霜脊高地雪天实战">
+                <img src="./site/assets/shot-03-frost.png" alt="第 12 关冰脊哨台霜脊雪天实战" loading="lazy" />
+              </button>
+              <figcaption>第四章「冰脊哨台」风雪积雪与多线布防</figcaption>
+            </figure>
+            <figure class="shot-card">
+              <button type="button" class="shot-btn" data-shot="3" aria-label="查看大图：弃采矿道绞盘矿廊实战">
+                <img src="./site/assets/shot-04-mine.png" alt="第 08 关绞盘矿廊矿道实战" loading="lazy" />
+              </button>
+              <figcaption>第三章「绞盘矿廊」三层折返矿轨与迎面矿车</figcaption>
+            </figure>
+            <figure class="shot-card">
+              <button type="button" class="shot-btn" data-shot="4" aria-label="查看大图：炮塔编队界面">
+                <img src="./site/assets/shot-05-loadout.png" alt="11 种射击塔与 4 种拦截建筑的 5 槽炮塔编队界面" loading="lazy" />
+              </button>
+              <figcaption>11 塔 + 4 拦截建筑，5 槽自由搭配出战编队</figcaption>
+            </figure>
+            <figure class="shot-card">
+              <button type="button" class="shot-btn" data-shot="5" aria-label="查看大图：凛冬麋王 Boss 战">
+                <img src="./site/assets/shot-06-boss.png" alt="第 12 关凛冬麋王冰封炮塔 Boss 战" loading="lazy" />
+              </button>
+              <figcaption>首领战「凛冬麋王」寒域法阵与连点破冰</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section id="download" class="section section-download">
+        <div class="container">
+          <div class="section-head">
+            <span class="kicker">DOWNLOAD · v1.1.2</span>
+            <h2>选择你的下载方式</h2>
+            <p>提供 TapTap 商店与安卓 APK 直装两种官方途径，所有存档均保存在本机设备中。</p>
+          </div>
+
+          <div class="download-grid">
+            <article class="download-card download-taptap">
+              <div class="download-card-main">
+                <span class="download-tag taptap-tag">方式一 · 推荐</span>
+                <h3>TapTap 客户端 / 网页</h3>
+                <p>前往《微光防线》TapTap 官方页面获取更新提醒、查看开发日志，并留下你的真实评价与反馈。</p>
+                <div class="download-card-actions">
+                  <a
+                    class="btn btn-taptap"
+                    href="https://tap.cn/KZsUFX9M"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M14 5h5v5m0-5-9 9M19 13v5a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h5" />
+                    </svg>
+                    <span><strong>打开 TapTap 页面</strong><small>https://tap.cn/KZsUFX9M</small></span>
+                  </a>
+                </div>
+              </div>
+              <div class="download-qr">
+                <button
+                  type="button"
+                  class="qr-mini-btn"
+                  id="download-qr-trigger"
+                  aria-label="放大查看 TapTap 下载二维码"
+                >
+                  <img
+                    src="./site/assets/taptap-qr.png"
+                    alt="《微光防线》TapTap 二维码"
+                    width="148"
+                    height="148"
+                  />
+                </button>
+                <span>扫码进入 TapTap</span>
+              </div>
+            </article>
+
+            <article class="download-card download-android">
+              <div class="download-card-main">
+                <span class="download-tag android-tag">方式二 · 安卓直装</span>
+                <h3>Android 安装包（APK）</h3>
+                <p>适合直接下载安装体验最新版本。支持 Android 7.0（API 24）及以上横屏设备，覆盖安装可保留旧版存档。</p>
+                <ul class="apk-meta">
+                  <li><strong>版本</strong><span>v1.1.2（versionCode 33）</span></li>
+                  <li><strong>大小</strong><span>约 39 MB</span></li>
+                  <li><strong>包名</strong><span><code>com.mosslight.expedition</code></span></li>
+                  <li>
+                    <strong>SHA-256</strong>
+                    <span class="hash-row">
+                      <code id="apk-sha256">5593fecbfaaae82654ad872ecb148f778b3ffeecdb4ea2589a6d2d786d2f16dd</code>
+                      <button type="button" class="copy-btn" id="copy-sha256">复制</button>
+                    </span>
+                  </li>
+                </ul>
+                <div class="download-card-actions">
+                  <a
+                    class="btn btn-android"
+                    href="https://github.com/CatCatchFish/Mosslight/releases/download/v1.1.2/glimmer-defense-1.1.2-debug.apk"
+                    download="glimmer-defense-1.1.2-debug.apk"
+                  >
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M12 3v12m0 0-4-4m4 4 4-4M5 19h14" />
+                    </svg>
+                    <span><strong>直接下载 APK</strong><small>glimmer-defense-1.1.2-debug.apk</small></span>
+                  </a>
+                  <a
+                    class="btn btn-ghost"
+                    href="https://github.com/CatCatchFish/Mosslight/releases"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >查看历史版本</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <img src="./site/assets/icon.png" alt="" width="28" height="28" />
+          <div>
+            <strong>微光防线（Glimmer Defense）</strong>
+            <p>MobCat的工作室 · 离线单机像素塔防 · 当前版本 v1.1.2</p>
+          </div>
+        </div>
+        <div class="footer-links">
+          <a href="https://tap.cn/KZsUFX9M" target="_blank" rel="noopener noreferrer">TapTap</a>
+          <a href="https://github.com/CatCatchFish/Mosslight" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="./privacy-policy.html">隐私政策</a>
+          <a href="mailto:mob0825@163.com">联系邮箱</a>
+        </div>
+      </div>
+    </footer>
+
+    <dialog id="lightbox" class="modal-dialog" aria-label="截图大图预览">
+      <div class="modal-head">
+        <span id="lightbox-caption"></span>
+        <button type="button" class="modal-close" id="lightbox-close" aria-label="关闭预览">✕</button>
+      </div>
+      <div class="lightbox-stage">
+        <button type="button" class="lightbox-nav prev" id="lightbox-prev" aria-label="上一张">‹</button>
+        <img id="lightbox-img" alt="" />
+        <button type="button" class="lightbox-nav next" id="lightbox-next" aria-label="下一张">›</button>
+      </div>
+    </dialog>
+
+    <dialog id="qr-modal" class="modal-dialog qr-modal" aria-labelledby="qr-modal-title">
+      <div class="modal-head">
+        <strong id="qr-modal-title">扫码前往 TapTap 下载《微光防线》</strong>
+        <button type="button" class="modal-close" id="qr-modal-close" aria-label="关闭二维码弹窗">✕</button>
+      </div>
+      <div class="qr-modal-body">
+        <img src="./site/assets/taptap-qr.png" alt="《微光防线》TapTap 下载二维码" width="280" height="280" />
+        <p>使用 TapTap 客户端或手机相机扫码，或直接打开链接：</p>
+        <a class="btn btn-taptap" href="https://tap.cn/KZsUFX9M" target="_blank" rel="noopener noreferrer">
+          <span><strong>前往 https://tap.cn/KZsUFX9M</strong></span>
+        </a>
+      </div>
+    </dialog>
+
+    <script src="./site/app.js" defer></script>
+  </body>
+</html>
