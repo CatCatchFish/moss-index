@@ -23,8 +23,10 @@
       }
       h1 { margin: 0 0 8px; font-size: 28px; line-height: 1.35; }
       h2 { margin: 28px 0 8px; font-size: 19px; line-height: 1.45; }
+      h3 { margin: 18px 0 6px; font-size: 16px; line-height: 1.5; }
       p, ul { margin: 8px 0; }
       ul { padding-left: 22px; }
+      code { font-size: 0.92em; word-break: break-all; }
       .meta { color: #67736c; font-size: 14px; }
       .note {
         margin: 20px 0;
@@ -32,7 +34,7 @@
         background: #eef3ea;
         border-left: 4px solid #6f8f72;
       }
-      a { color: #456f5a; }
+      a { color: #456f5a; word-break: break-all; }
       @media (max-width: 560px) {
         main { margin: 16px auto; padding: 22px 18px; width: calc(100% - 24px); }
         h1 { font-size: 23px; }
@@ -46,85 +48,111 @@
 
       <div class="note">
         本政策适用于 MobCat的工作室提供的单机游戏《微光防线》Android 版本。
-        游戏无需注册或登录账号，进度仅保存在本机；在您明确点击“同意并启用”之前，游戏不会初始化任何 TapTap 统计或评价 SDK，也不会收集个人信息。选择“暂不启用”不影响任何游戏功能，也不接入广告、内购或云存档。
+        游戏无需注册或登录账号，进度仅保存在本机；在您明确勾选授权并点击“同意并启用”之前，游戏不会初始化任何 TapTap 统计或评价 SDK，也不会收集个人信息。选择“不同意（仅单机）”不影响任何游戏功能，游戏不接入广告、内购或云存档。
       </div>
 
-      <h2>一、运营者与联系方式</h2>
-      <p>运营者：MobCat的工作室</p>
-      <p>联系邮箱：<a href="mailto:mob0825@163.com">mob0825@163.com</a></p>
-      <p>我们将在收到您的请求并完成必要核验后，于 30 天内予以答复；法律法规另有规定的除外。</p>
+      <h2>一、定义</h2>
+      <p><strong>我们：</strong>指 MobCat的工作室。</p>
+      <p><strong>个人信息：</strong>指以电子或者其他方式记录的与已识别或者可识别的自然人有关的各种信息，不包括匿名化处理后的信息。</p>
+      <p><strong>个人敏感信息：</strong>指一旦泄露或者非法使用，可能导致个人受到歧视或者人身、财产受到严重危害的个人信息。本游戏不主动收集身份证号、生物识别、医疗健康、金融账户、精确位置这类个人敏感信息。</p>
+      <p><strong>未成年人：</strong>指不满 18 周岁的自然人。<strong>儿童：</strong>指不满 14 周岁的自然人。</p>
 
-      <h2>二、我们收集个人信息的目的、方式与范围</h2>
-      <p><strong>1. 仅保存在本机的数据（不上传）。</strong>游戏进度、关卡星级、编队、天赋、评价提醒记录、音频/画质设置以及隐私授权状态仅保存在您的设备本地存储中，用于维持单机游玩体验。本游戏没有服务器存档，不会主动上传或远程读取上述本地数据。</p>
-      <p><strong>2. 经您单独同意的可选统计分析（TapDB）。</strong>首次启动时，游戏会向您展示隐私说明并询问是否开启可选统计；仅在您主动点击“同意并启用”后，才会初始化 TapSDK / TapDB 并按需收集以下信息：</p>
+      <h2>二、我们如何收集和使用个人信息</h2>
+      <h3>1. 仅保存在本机的数据（不上传）</h3>
+      <p>游戏进度、关卡星级、编队、天赋、评价提醒记录、音频与画质设置、统计同意状态及本机随机统计安装标识仅保存在您的设备本地存储中，用于维持单机游玩体验。本游戏没有服务器存档，我们不会主动上传或远程读取上述本地数据。</p>
+
+      <h3>2. 经您单独同意的可选统计分析（TapDB）</h3>
+      <p>首次启动时，游戏会展示隐私说明并询问是否同意启用可选统计；只有您勾选确认并点击“同意并启用”后，才会初始化 TapSDK / TapDB 并按需收集以下信息：</p>
       <ul>
         <li><strong>收集目的：</strong>设备兼容性排查、运行稳定性分析、关卡难度与玩法体验改进。</li>
-        <li><strong>收集方式：</strong>经您同意并初始化 SDK 后，由 TapSDK 自动采集设备与系统基础信息，游戏通过程序接口上报随机统计标识和游戏内事件。</li>
-        <li><strong>收集范围：</strong>
+        <li><strong>收集方式：</strong>经您同意并初始化 SDK 后，由 TapSDK 采集设备与系统基础信息，游戏通过程序接口上报随机统计标识和游戏内事件。</li>
+        <li><strong>收集范围与收集频次：</strong>
           <ul>
-            <li><strong>本机随机统计标识：</strong>同意后由游戏在本机随机生成的匿名安装 ID（不含姓名、手机号、账号或实名信息），用于区分安装并统计留存。</li>
-            <li><strong>设备与系统信息：</strong>系统版本、设备型号、设备 CPU 信息、设备内存信息、网络类型、Wi-Fi 信息、AndroidID、OAID（匿名设备标识符）、设备版本、手机样式、传感器列表及网络请求产生的 IP 地址。其中 AndroidID 与 OAID 仅用于设备去重、安装与留存统计，不用于个性化广告或跨应用追踪。</li>
-            <li><strong>游戏内事件：</strong>关卡开始、关卡结果、炮塔建造与升级、编队保存、天赋点亮与重置，以及 TapDB 记录的设备活跃事件。事件属性仅含关卡编号、章节、地貌、天气、胜负、星级、生命、波次、时长、炮塔/天赋编号、等级与操作类型，不含任何自由输入文本。</li>
+            <li><strong>本机随机统计标识：</strong>同意后由游戏在本机随机生成的匿名安装 ID（不含姓名、手机号、账号或实名信息），用于区分安装并统计留存。<strong>收集频次：</strong>首次同意时本地生成 1 次，此后每次冷启动初始化 SDK 时关联 1 次，无后台轮询采集。</li>
+            <li><strong>设备与系统信息：</strong>系统版本、设备型号、设备 CPU 信息、设备内存信息、网络类型、Wi-Fi 信息、AndroidID、OAID（匿名设备标识符）、设备版本、手机样式、传感器列表、网络请求产生的 IP 地址，以及 TapSDK 生成的匿名设备/安装标识（GID、TDID、install_uuid、device_id5）。上述标识仅用于设备去重、安装与留存统计，不用于跨应用追踪或商业营销。<strong>收集频次：</strong>仅在您同意后应用冷启动初始化 SDK 时采集 1 次，网络请求产生当次连接 IP，不在后台静默持续采集。</li>
+            <li><strong>游戏内事件：</strong>仅包含以下 7 个自定义事件：<code>stage_start</code>（关卡开始）、<code>stage_result</code>（关卡结果）、<code>tower_build</code>（炮塔建造）、<code>tower_upgrade</code>（炮塔升级）、<code>loadout_save</code>（编队保存）、<code>talent_upgrade</code>（天赋点亮）、<code>talent_reset</code>（天赋重置），以及 TapDB 在初始化和前后台切换时记录的设备活跃事件。事件属性仅包含关卡编号、章节、地貌、天气、胜负、星级、生命、波次、时长、炮塔或天赋编号、等级与操作类型，不含任何自由输入文本。<strong>收集频次：</strong>仅在玩家发生上述对应操作时单次上报，无后台定时轮询。</li>
           </ul>
         </li>
       </ul>
-      <p><strong>3. 经您主动触发的评价跳转（TapTap 评价 SDK）。</strong>TapTap 评价入口仅在您已开启上述数据服务授权、且 TapSDK 初始化完成后提供。当您在第 6 关或第 12 关通关后返回主线地图，并主动点击弹窗中的“去 TapTap 评价”按钮时，游戏会复用已初始化的 TapSDK 评价模块（tap-review），读取基础设备与系统信息（可能包括 AndroidID、OAID）以检测本机是否安装 TapTap 客户端，并为您打开评价页面（未安装时打开网页评价页）。如您点击“以后再说”，不会触发评价检测或跳转。</p>
-      <p>我们不会收集您的姓名、手机号、身份证号、通讯录、精确地理位置、相机、麦克风、相册或剪贴板信息，不要求账号，不接入广告 SDK、支付或个性化广告，也不会将 OAID 用于广告定向或自动化决策。</p>
 
-      <h2>三、设备权限与查询声明</h2>
+      <h3>3. 经您主动触发的评价跳转（TapTap 评价 SDK）</h3>
+      <p>TapTap 评价入口仅在您已开启上述数据服务授权、且 TapSDK 初始化完成后提供。当您在第 6 关或第 12 关通关后返回主线地图，并主动点击弹窗中的“去 TapTap 评价”按钮时，游戏会复用已初始化的 TapSDK 评价模块（<code>com.taptap.sdk:tap-review</code>），读取基础设备与系统信息（系统版本、设备型号、AndroidID、OAID、GID、TDID）并查询本机是否安装 TapTap 客户端，为您打开评价页面（未安装时打开网页评价页）。<strong>收集频次：</strong>仅在您主动点击“去 TapTap 评价”时单次触发；如您点击“以后再说”，不会触发任何信息读取、包名查询或页面跳转。</p>
+      <p>我们不会收集您的姓名、手机号、身份证号、通讯录、精确地理位置、相机、麦克风、相册或剪贴板信息，不要求账号，不接入任何广告 SDK 或支付模块，也不会将上述信息用于自动化决策。</p>
+
+      <h2>三、设备权限与包名查询</h2>
       <p>游戏仅声明以下必要系统权限和包名可见性：</p>
       <ul>
-        <li><strong>网络权限（INTERNET）与网络状态权限（ACCESS_NETWORK_STATE）：</strong>仅在您同意开启可选统计或主动点击“去 TapTap 评价”时，用于连接 TapDB 或打开评价页面并检测网络连接状态。</li>
-        <li><strong>应用包名查询（queries 仅限 TapTap 客户端）：</strong>仅声明查询 <code>com.taptap</code>、<code>com.taptap.global</code>、<code>com.taptap.global.lite</code>，且仅在您主动点击“去 TapTap 评价”时用于判断是否拉起 TapTap 客户端，不读取设备上的其他已安装应用列表。</li>
+        <li><strong>网络权限（<code>android.permission.INTERNET</code>）与网络状态权限（<code>android.permission.ACCESS_NETWORK_STATE</code>）：</strong>仅在您同意开启可选统计或主动点击“去 TapTap 评价”时，用于连接 TapDB 或打开评价页面并检测网络连接状态。</li>
+        <li><strong>应用包名查询（<code>&lt;queries&gt;</code> 仅限 TapTap 客户端）：</strong>仅声明查询 <code>com.taptap</code>、<code>com.taptap.global</code>、<code>com.taptap.global.lite</code>，且仅在您主动点击“去 TapTap 评价”时用于判断是否拉起 TapTap 客户端，不读取设备上的其他已安装应用列表。</li>
       </ul>
       <p>游戏不申请通讯录、存储、位置、相机、麦克风、相册、悬浮窗或电话状态权限。</p>
 
-      <h2>四、第三方 SDK 与信息共享</h2>
-      <p>游戏集成易玩（上海）网络科技有限公司提供的以下 TapSDK 模块。TapDB 统计模块仅在取得您的明确同意后运行；评价模块仅在您已同意且主动点击“去 TapTap 评价”后运行：</p>
+      <h2>四、自启动与关联启动说明</h2>
       <ul>
-        <li><strong>1. TapSDK / TapDB（com.taptap.sdk:tap-core）</strong>
-          <ul>
-            <li><strong>第三方主体：</strong>易玩（上海）网络科技有限公司</li>
-            <li><strong>使用目的：</strong>设备兼容与故障排查、游戏事件统计、关卡与留存分析</li>
-            <li><strong>收集信息范围：</strong>本政策第二条第 2 款所列的本机随机统计标识、设备与系统信息（含 AndroidID、OAID）及游戏内事件</li>
-            <li><strong>收集方式：</strong>经您同意初始化后自动采集设备与系统信息，并通过接口上报统计标识和游戏事件</li>
-            <li><strong>官方隐私政策：</strong><a href="https://developer.taptap.cn/docs/sdk/start/agreement/" target="_blank" rel="noopener noreferrer">TapSDK 隐私政策</a></li>
-          </ul>
+        <li><strong>自启动说明：</strong>本游戏不存在开机自启动、定时自启动、广播唤醒或后台静默拉活行为。您退出游戏后，本游戏不会在后台自动启动或驻留运行。</li>
+        <li><strong>关联启动说明：</strong>本游戏仅在您已开启 TapTap 数据服务授权，且在第 6 关或第 12 关通关后<strong>主动点击</strong>“去 TapTap 评价”按钮时，才会单次查询本机是否安装 TapTap 客户端（<code>com.taptap</code>、<code>com.taptap.global</code>、<code>com.taptap.global.lite</code>）并关联启动 TapTap 客户端进入游戏评价页面（未安装时改为打开网页评价页）。如您未授权或点击“以后再说”，不会触发任何关联启动行为。</li>
+      </ul>
+
+      <h2>五、我们如何存储和保护个人信息</h2>
+      <p>本地游戏数据和隐私授权状态保存在您的设备中，直至您清除应用数据或卸载游戏。当前版本使用 TapDB 中国区服务，不主动向境外提供个人信息。</p>
+      <p>TapDB 侧数据的存储地点、保留期限和安全措施以官方 <a href="https://developer.taptap.cn/docs/sdk/start/agreement/" target="_blank" rel="noopener noreferrer">TapSDK 隐私政策</a>为准；我们仅在实现统计目的所需的最短期限内保留可关联数据。超过保留期限后，相关数据将被删除或匿名化；法律法规另有保存要求的除外。</p>
+      <p>我们通过 HTTPS 网络传输、最小化采集范围、限制访问权限并仅选用已披露的第三方 SDK 保护数据。若发生个人信息安全事件，我们会依法采取补救措施，并通过游戏内提示告知您相关情况；法律法规另有规定的除外。</p>
+
+      <h2>六、我们如何共享、转让和公开披露个人信息</h2>
+      <p>除下述清单明确列出的第三方 SDK 外，我们不会出售、出租或向其他第三方共享您的个人信息。</p>
+      <h3>《第三方信息共享清单》</h3>
+      <ul>
+        <li>
+          <strong>SDK 名称：</strong>TapSDK / TapDB（<code>com.taptap.sdk:tap-core</code>）<br />
+          <strong>第三方名称：</strong>易玩（上海）网络科技有限公司<br />
+          <strong>收集信息类型：</strong>本机随机匿名统计安装 ID、系统版本、设备型号、设备 CPU 信息、设备内存信息、网络类型、Wi-Fi 信息、AndroidID、OAID、设备版本、手机样式、传感器列表、网络请求产生的 IP 地址、SDK 生成的匿名设备/安装标识（GID、TDID、install_uuid、device_id5），以及 7 项游戏内自定义事件（<code>stage_start</code>、<code>stage_result</code>、<code>tower_build</code>、<code>tower_upgrade</code>、<code>loadout_save</code>、<code>talent_upgrade</code>、<code>talent_reset</code>）和设备活跃事件<br />
+          <strong>功能用途：</strong>设备兼容性排查、运行稳定性分析、安装与留存统计、关卡难度与玩法体验分析<br />
+          <strong>收集方式与频次：</strong>仅在您勾选同意并点击“同意并启用”后初始化采集；设备与系统基础信息在冷启动初始化时采集 1 次，游戏内事件仅在对应玩家操作时单次上报，无后台轮询<br />
+          <strong>官方网址：</strong><a href="https://www.taptap.cn/" target="_blank" rel="noopener noreferrer">https://www.taptap.cn/</a><br />
+          <strong>隐私政策协议链接：</strong><a href="https://developer.taptap.cn/docs/sdk/start/agreement/" target="_blank" rel="noopener noreferrer">https://developer.taptap.cn/docs/sdk/start/agreement/</a>
         </li>
-        <li><strong>2. TapSDK 评价模块（com.taptap.sdk:tap-review）</strong>
-          <ul>
-            <li><strong>第三方主体：</strong>易玩（上海）网络科技有限公司</li>
-            <li><strong>使用目的：</strong>响应玩家主动操作，拉起 TapTap 客户端或网页端打开本游戏评价页</li>
-            <li><strong>收集信息范围：</strong>基础设备与系统信息（含 AndroidID、OAID）及 TapTap 客户端安装状态</li>
-            <li><strong>收集方式：</strong>仅在您主动点击“去 TapTap 评价”后按需调用</li>
-            <li><strong>官方隐私政策：</strong><a href="https://developer.taptap.cn/docs/sdk/start/agreement/" target="_blank" rel="noopener noreferrer">TapSDK 隐私政策</a></li>
-          </ul>
+        <li>
+          <strong>SDK 名称：</strong>TapSDK 评价模块（<code>com.taptap.sdk:tap-review</code>）<br />
+          <strong>第三方名称：</strong>易玩（上海）网络科技有限公司<br />
+          <strong>收集信息类型：</strong>基础设备与系统信息（系统版本、设备型号、AndroidID、OAID、GID、TDID）及本机 TapTap 客户端（<code>com.taptap</code>、<code>com.taptap.global</code>、<code>com.taptap.global.lite</code>）安装状态<br />
+          <strong>功能用途：</strong>响应您主动发起的评价操作，检测并拉起 TapTap 客户端或网页评价页<br />
+          <strong>收集方式与频次：</strong>仅在已开启数据服务授权且您主动点击“去 TapTap 评价”后单次调用，未点击不触发<br />
+          <strong>官方网址：</strong><a href="https://www.taptap.cn/" target="_blank" rel="noopener noreferrer">https://www.taptap.cn/</a><br />
+          <strong>隐私政策协议链接：</strong><a href="https://developer.taptap.cn/docs/sdk/start/agreement/" target="_blank" rel="noopener noreferrer">https://developer.taptap.cn/docs/sdk/start/agreement/</a>
         </li>
       </ul>
-      <p>除上述明确告知的服务及法律法规要求外，我们不会出售、转让或向任何其他第三方共享您的个人信息。</p>
+      <p>我们可能根据法律法规要求，或应公安、法院、网信主管部门的强制性要求共享、披露必要信息；接收方须提供相应法律文件。以下情形共享、转让、公开披露个人信息无需另行取得授权：与国家安全、国防安全直接相关的；与犯罪侦查、起诉、审判和判决执行直接相关的；为维护您或他人生命、财产重大合法权益但很难及时取得同意的；您自行公开或其他合法公开渠道收集的；根据您的要求签订或履行合同所必需的；为保障产品或服务安全稳定运行所必需的；法律法规规定的其他情形。</p>
+      <p>若发生合并、分立、收购或破产主体变更，我们会告知接收方信息并继续受本政策约束；接收方变更原处理目的或方式的，将依法重新取得您的同意。</p>
 
-      <h2>五、存储地点与保留期限</h2>
-      <p>本地游戏数据和隐私授权状态保存在您的设备中，直至您清除应用数据或卸载游戏。</p>
-      <p>当前版本使用 TapDB 中国区服务，不主动向境外提供个人信息。TapDB 侧数据的存储地点、保留期限和安全措施以官方 <a href="https://developer.taptap.cn/docs/sdk/start/agreement/" target="_blank" rel="noopener noreferrer">TapSDK 隐私政策</a>为准；我们仅在实现上述统计目的所需的最短期限内保留可关联数据。若后续改为 TapDB 全球区服务或涉及跨境处理，我们会更新本政策并依法重新取得您的同意。</p>
-
-      <h2>六、撤回同意与停止处理</h2>
-      <p>您可以在游戏内“系统设置 → 隐私政策”弹窗底部随时撤回统计授权。撤回后，游戏会立即清空尚未发送的事件队列、清除 SDK 当前统计用户标识、删除本机保存的随机统计安装标识并停止新增自定义事件；TapTap 评价入口也会同时不可用。</p>
-      <p>TapDB 的自动设备数据流程没有公开的即时关闭接口，撤回后当前应用进程内可能仍有已启动的处理。如需立即停止，请在撤回后彻底结束应用进程；再次启动时游戏会因未同意而不再初始化统计 SDK。已发送的数据无法从对方系统中自动撤回，但您可以按下述方式提出删除请求。</p>
-
-      <h2>七、未成年人保护</h2>
-      <p>游戏不主动收集未成年人身份信息。未满 14 周岁的儿童应在监护人阅读并同意本政策后使用本游戏并决定是否开启可选统计；监护人不同意时，应选择“暂不启用”，并可在隐私政策页底部随时关闭。监护人发现儿童在未经同意的情况下提供了个人信息，可通过联系邮箱要求删除，我们会协调处理。</p>
+      <h2>七、本地存储、广告与自动化决策</h2>
+      <p>本游戏不使用 Cookie，不接入任何广告模块或内购支付，不进行用户画像与自动化决策。游戏仅使用设备本地存储保存进度、设置和授权状态，您可通过清除应用数据或卸载游戏删除。</p>
+      <p>AndroidID、OAID、GID、TDID、install_uuid、device_id5 设备标识仅用于设备去重、安装和统计分析，不用于跨应用追踪或商业营销；TapTap 评价入口仅用于响应您主动发起的评价操作。</p>
 
       <h2>八、您的权利</h2>
       <p>您有权访问、复制、更正、删除您的个人信息，撤回统计同意，并要求我们解释数据处理规则。本地数据可通过“清除应用数据”或卸载游戏删除；已上报至 TapDB 的数据，可通过联系邮箱提交删除或查询请求，并提供设备型号、大致使用时间和请求内容。由于本游戏没有账号，部分历史统计可能无法精确对应到特定个人，我们会按法律要求协助处理并说明结果。</p>
-      <p>如您对处理结果不满意，可以向网信、市场监管、公安等监管部门投诉或举报，也可以依法向人民法院提起诉讼。</p>
+      <p>如您对处理结果不满意，可以向网信、市场监管、公安监管部门投诉或举报，也可以依法向人民法院提起诉讼。</p>
 
-      <h2>九、Cookie、广告与自动化决策</h2>
-      <p>游戏不使用 Cookie、广告 SDK、个性化广告或个性化推荐技术，不进行自动化决策，不接入内购。OAID 仅用于设备去重、安装和统计分析，不用于广告定向；TapTap 评价入口仅用于响应您主动发起的评价操作。</p>
+      <h2>九、撤回同意与停止处理</h2>
+      <p>您可以在游戏内“系统设置 → 隐私政策”弹窗底部随时撤回统计授权。撤回后，游戏会立即清空尚未发送的事件队列、清除 SDK 当前统计用户标识、删除本机保存的随机统计安装标识并停止新增自定义事件；TapTap 评价入口也会同时不可用。</p>
+      <p>TapDB 的自动设备数据流程没有公开的即时关闭接口，撤回后当前应用进程内可能仍有已启动的处理。如需立即停止，请在撤回后彻底结束应用进程；再次启动时游戏会因未同意而不再初始化统计 SDK。已发送的数据无法从对方系统中自动撤回，但您可以按本政策提供的方式提出删除请求。</p>
 
-      <h2>十、政策更新</h2>
-      <p>当游戏功能、权限或数据处理方式发生变化时，我们会更新本政策并修改页面顶部的更新日期。若变更涉及新的个人信息收集、使用目的或共享对象，我们会通过游戏内提示等合理方式重新取得您的同意。</p>
+      <h2>十、未成年人保护</h2>
+      <p>游戏不主动收集未成年人身份信息。未满 14 周岁的儿童应在监护人阅读并同意本政策后使用本游戏并决定是否开启可选统计；监护人不同意时，应选择“不同意（仅单机）”，并可在隐私政策页底部随时关闭。监护人发现儿童在未经同意的情况下提供了个人信息，可通过联系邮箱要求删除，我们会协调处理。未成年人应在监护人指导下使用本游戏。</p>
 
-      <h2>十一、适用法律</h2>
+      <h2>十一、本政策如何更新</h2>
+      <p>我们的隐私政策可能变更。未经您明确同意，我们不会削减您依据本政策享有的权利；更新内容会发布在游戏内隐私政策页并修改更新日期。</p>
+      <p>若发生处理目的、信息类型、共享对象、用户权利或联系方式的重大变更，我们会通过游戏内提示再次取得您的明示同意。重大变更包括：服务模式或个人信息处理方式发生重大变化；所有权或组织架构发生重大变化；个人信息共享、转让或公开披露的主要对象发生变化；您参与个人信息处理的权利及其行使方式发生重大变化；负责个人信息保护的联络方式或投诉渠道发生变化；个人信息安全影响评估表明存在高风险。</p>
+
+      <h2>十二、如何联系我们</h2>
+      <p>如您对本政策有任何疑问、意见或建议，可通过以下方式联系我们：</p>
+      <ul>
+        <li>客服电话：<a href="tel:18166069845">18166069845</a></li>
+        <li>联系邮箱：<a href="mailto:mob0825@163.com">mob0825@163.com</a></li>
+        <li>联系地址：北京市昌平区北京化工大学昌平校区，联系人：阿猫</li>
+      </ul>
+      <p>我们将在收到您的请求并完成必要核验后，于 30 天内予以答复；法律法规另有规定的除外。</p>
+
+      <h2>十三、适用法律</h2>
       <p>本政策适用中华人民共和国法律。因本政策产生的争议，双方应先友好协商；协商不成的，可依法向有管辖权的人民法院提起诉讼。</p>
     </main>
   </body>
