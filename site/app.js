@@ -72,4 +72,31 @@
       copyBtn.textContent = "复制失败";
     }
   });
+
+  const showcaseVideo = document.getElementById("showcase-video");
+  const chapterButtons = Array.from(document.querySelectorAll(".chapter-btn"));
+  if (showcaseVideo && chapterButtons.length) {
+    const chapters = chapterButtons.map((btn) => ({
+      btn,
+      time: Number(btn.getAttribute("data-seek") || "0"),
+    }));
+    const setActiveChapter = (activeBtn) => {
+      for (const { btn } of chapters) btn.classList.toggle("is-active", btn === activeBtn);
+    };
+    for (const { btn, time } of chapters) {
+      btn.addEventListener("click", () => {
+        showcaseVideo.currentTime = time;
+        setActiveChapter(btn);
+        void showcaseVideo.play().catch(() => {});
+      });
+    }
+    showcaseVideo.addEventListener("timeupdate", () => {
+      const t = showcaseVideo.currentTime;
+      let currentChapter = chapters[0];
+      for (const item of chapters) {
+        if (t + 0.15 >= item.time) currentChapter = item;
+      }
+      setActiveChapter(currentChapter.btn);
+    });
+  }
 })();

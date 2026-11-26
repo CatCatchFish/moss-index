@@ -30,6 +30,7 @@
           </span>
         </a>
         <nav class="site-nav" aria-label="主导航">
+          <a href="#showcase">实机视频</a>
           <a href="#features">玩法特色</a>
           <a href="#regions">五大区域</a>
           <a href="#gallery">实机截图</a>
@@ -129,6 +130,53 @@
             </button>
             <p class="qr-caption">使用 TapTap App 或手机相机扫码<br />亦可直接访问 <a href="https://tap.cn/KZsUFX9M" target="_blank" rel="noopener noreferrer">tap.cn/KZsUFX9M</a></p>
           </aside>
+        </div>
+      </section>
+
+      <section id="showcase" class="section section-alt">
+        <div class="container">
+          <div class="section-head">
+            <span class="kicker">LIVE GAMEPLAY · 02:18</span>
+            <h2>实机玩法完整演示</h2>
+            <p>实机版本录制，无加速剪辑。完整展示五大区域 18 关大地图、11 塔 + 4 拦截编队、营地星辉加护、建造升级、战场机关与风雪毒沼实战。</p>
+          </div>
+          <div class="showcase-shell">
+            <div class="showcase-player-wrap">
+              <video
+                id="showcase-video"
+                class="showcase-video"
+                controls
+                playsinline
+                preload="metadata"
+                poster="./site/assets/cover.png"
+                width="1280"
+                height="720"
+              >
+                <source src="./site/assets/gameplay-showcase.mp4" type="video/mp4" />
+                你的浏览器暂不支持 HTML5 视频播放，可<a href="./site/assets/gameplay-showcase.mp4">点击直接下载实机视频</a>。
+              </video>
+            </div>
+            <div class="showcase-chapters" role="group" aria-label="实机视频章节跳转">
+              <button type="button" class="chapter-btn is-active" data-seek="0">
+                <span>00:00</span><strong>五大区域大地图</strong>
+              </button>
+              <button type="button" class="chapter-btn" data-seek="10.8">
+                <span>00:11</span><strong>炮塔编队与天赋</strong>
+              </button>
+              <button type="button" class="chapter-btn" data-seek="23">
+                <span>00:23</span><strong>核心布防与图鉴</strong>
+              </button>
+              <button type="button" class="chapter-btn" data-seek="50">
+                <span>00:50</span><strong>弃采矿道与矿车</strong>
+              </button>
+              <button type="button" class="chapter-btn" data-seek="80">
+                <span>01:20</span><strong>瘴雾毒沼攻防</strong>
+              </button>
+              <button type="button" class="chapter-btn" data-seek="104.2">
+                <span>01:44</span><strong>霜脊暴风雪激战</strong>
+              </button>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -310,7 +358,7 @@
                   <li>
                     <strong>SHA-256</strong>
                     <span class="hash-row">
-                      <code id="apk-sha256">5593fecbfaaae82654ad872ecb148f778b3ffeecdb4ea2589a6d2d786d2f16dd</code>
+                      <code id="apk-sha256">6d8f4da3ea29042b4ce9325e4e62c05b9d151bba87ac196831c81ed16df1d88c</code>
                       <button type="button" class="copy-btn" id="copy-sha256">复制</button>
                     </span>
                   </li>
