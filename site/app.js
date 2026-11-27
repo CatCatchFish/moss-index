@@ -1,11 +1,11 @@
 (() => {
   const shots = [
-    { src: "./site/assets/shot-01-map.png", caption: "五大区域 18 关手绘像素大地图与闯关推进" },
-    { src: "./site/assets/shot-02-mire.png", caption: "第五章「泥炭孤岛」双桥登岛与毒沼攻防" },
-    { src: "./site/assets/shot-03-frost.png", caption: "第四章「冰脊哨台」风雪积雪与多线布防" },
-    { src: "./site/assets/shot-04-mine.png", caption: "第三章「绞盘矿廊」三层折返矿轨与迎面矿车" },
-    { src: "./site/assets/shot-05-loadout.png", caption: "11 塔 + 4 拦截建筑，5 槽自由搭配出战编队" },
-    { src: "./site/assets/shot-06-boss.png", caption: "首领战「凛冬麋王」寒域法阵与连点破冰" },
+    { src: "./site/assets/shot-01-frost.png", caption: "暴风雪逐塔积雪 · 燧火暖区融雪护塔与天气化学联动" },
+    { src: "./site/assets/shot-02-mine.png", caption: "弃采矿道风沙激战 · 十塔齐射与迎面运矿车破阵" },
+    { src: "./site/assets/shot-03-mire.png", caption: "瘴雾毒沼三路防线 · 回流闸与沼泽信标机关联动" },
+    { src: "./site/assets/shot-04-atlas.png", caption: "炮塔图谱一览 · 16 座防御建筑与 32 条四级专精分支" },
+    { src: "./site/assets/shot-05-map.png", caption: "五大生态 18 关手绘像素大地图与主线闯关推进" },
+    { src: "./site/assets/shot-06-talents.png", caption: "营地微光加护 · 6 条星辉天赋路线随时免费重置" },
   ];
 
   const lightbox = document.getElementById("lightbox");

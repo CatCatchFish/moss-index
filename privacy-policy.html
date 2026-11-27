@@ -44,11 +44,11 @@
   <body>
     <main>
       <h1>《微光防线》隐私政策</h1>
-      <p class="meta">更新日期：2026 年 11 月 25 日<br />生效日期：2026 年 11 月 25 日<br />在线隐私政策链接：<a href="https://catcatchfish.github.io/moss-index/privacy-policy.html" target="_blank" rel="noopener noreferrer">https://catcatchfish.github.io/moss-index/privacy-policy.html</a></p>
+      <p class="meta">更新日期：2026 年 11 月 27 日<br />生效日期：2026 年 11 月 27 日<br />在线隐私政策链接：<a href="https://catcatchfish.github.io/moss-index/privacy-policy.html" target="_blank" rel="noopener noreferrer">https://catcatchfish.github.io/moss-index/privacy-policy.html</a></p>
 
       <div class="note">
-        <strong>核心隐私告知摘要：</strong>本政策适用于 MobCat的工作室提供的单机游戏《微光防线》Android 版本。游戏无需注册或登录账号，进度仅保存在本机。在您明确勾选授权并点击“同意并启用”之前，游戏不会初始化任何第三方 SDK，也不会收集或读取 OAID、AndroidID、GAID 及任何个人信息；选择“不同意（仅单机）”不影响任何单机玩法。<br />
-        仅在您主动勾选并点击“同意并启用”后，游戏才会初始化易玩（上海）网络科技有限公司提供的 TapSDK / TapDB（<code>com.taptap.sdk:tap-core</code>）及评价模块（<code>com.taptap.sdk:tap-review</code>），用于设备兼容性排查、运行稳定性与关卡玩法统计分析，按需收集 <strong>OAID（匿名设备标识符）</strong>、<strong>AndroidID</strong>、<strong>GAID</strong>、设备与系统基础信息、匿名设备标识（TDID、install_uuid、device_id5）及 7 项游戏内操作事件（冷启动初始化采集 1 次、操作事件单次上报，无后台轮询，不接入广告、内购或云存档）。TapSDK 官方隐私政策：<a href="https://developer.taptap.cn/docs/sdk/start/agreement/" target="_blank" rel="noopener noreferrer">https://developer.taptap.cn/docs/sdk/start/agreement/</a>。
+        <strong>核心隐私与 OAID 收集告知摘要：</strong>本政策适用于 MobCat的工作室提供的单机游戏《微光防线》Android 版本。游戏无需注册或登录账号，进度仅保存在本机。<strong>在您明确勾选下方同意框并点击“同意并启用”之前，游戏不会初始化任何第三方 SDK，也不会收集或读取 OAID（开放匿名设备标识符）、AndroidID、GAID 及任何个人信息</strong>；选择“不同意（仅单机）”不会初始化任何 SDK，也不影响任何单机玩法。<br />
+        <strong>关于收集读取 OAID 等设备标识的特别说明：</strong>仅在您主动勾选并点击“同意并启用”后，游戏才会初始化易玩（上海）网络科技有限公司提供的 TapSDK / TapDB（核心库 <code>com.taptap.sdk:tap-core</code>，含内置设备标识组件 <code>com.taptap.sdk:tap-themislite</code>）及评价模块（<code>com.taptap.sdk:tap-review</code>）。初始化后，上述 SDK 及组件会通过设备系统接口<strong>收集并读取 OAID（开放匿名设备标识符）、AndroidID、GAID</strong> 以及基础设备与系统信息，用于生成设备匿名标识（<code>TDID</code>、<code>OneID</code>、<code>install_uuid</code>、<code>device_id5</code>），并结合 7 项游戏内操作事件用于<strong>设备去重、安装与留存统计、设备兼容性排查、运行稳定性与关卡玩法分析</strong>（冷启动初始化采集 1 次、操作事件单次上报，无后台轮询，不用于广告投放、商业追踪、内购或云存档）。TapSDK 官方隐私政策：<a href="https://developer.taptap.cn/docs/sdk/start/agreement/" target="_blank" rel="noopener noreferrer">https://developer.taptap.cn/docs/sdk/start/agreement/</a>。
       </div>
 
       <h2>一、定义</h2>
@@ -61,15 +61,15 @@
       <h3>1. 仅保存在本机的数据（不上传）</h3>
       <p>游戏进度、关卡星级、编队、天赋、评价提醒记录、音频与画质设置、统计同意状态及本机随机统计安装标识仅保存在您的设备本地存储中，用于维持单机游玩体验。本游戏没有服务器存档，我们不会主动上传或远程读取上述本地数据。</p>
 
-      <h3>2. 经您单独同意的可选统计分析（TapDB）</h3>
-      <p>首次启动时，游戏会展示隐私说明并询问是否同意启用可选统计；只有您勾选确认并点击“同意并启用”后，才会初始化 TapSDK / TapDB 并按需收集以下信息：</p>
+      <h3>2. 经您单独同意的可选统计分析（TapDB / TapSDK）</h3>
+      <p>首次启动时，游戏会在本弹窗内直接完整展示本《隐私政策》并询问是否同意启用可选统计；只有您勾选下方同意框并点击“同意并启用”后，才会初始化 TapSDK / TapDB（含内置设备标识组件 <code>com.taptap.sdk:tap-themislite</code>）并按需收集以下信息：</p>
       <ul>
-        <li><strong>收集目的：</strong>设备兼容性排查、运行稳定性分析、关卡难度与玩法体验改进。</li>
-        <li><strong>收集方式：</strong>经您同意并初始化 SDK 后，由 TapSDK 采集设备与系统基础信息，游戏通过程序接口上报随机统计标识和游戏内事件。</li>
+        <li><strong>收集目的：</strong>设备去重与安装留存统计、设备兼容性排查、运行稳定性分析、关卡难度与玩法体验改进。</li>
+        <li><strong>收集方式：</strong>仅在您明确同意并初始化 SDK 后，由 TapSDK 核心库及其内置 <code>tap-themislite</code> 组件通过设备系统服务接口读取 OAID、AndroidID、GAID 及设备系统基础信息，并由游戏通过程序接口上报本机随机统计标识和游戏内事件；未同意前绝不调用初始化，也不读取 OAID 等任何设备标识。</li>
         <li><strong>收集范围与收集频次：</strong>
           <ul>
             <li><strong>本机随机统计标识：</strong>同意后由游戏在本机随机生成的匿名安装 ID（不含姓名、手机号、账号或实名信息），用于区分安装并统计留存。<strong>收集频次：</strong>首次同意时本地生成 1 次，此后每次冷启动初始化 SDK 时关联 1 次，无后台轮询采集。</li>
-            <li><strong>设备与系统信息：</strong>系统版本、设备型号、设备 CPU 信息、设备内存信息、网络类型、Wi-Fi 信息、AndroidID、OAID（匿名设备标识符）、设备版本、手机样式、传感器列表、网络请求产生的 IP 地址，以及 TapSDK 生成的匿名设备/安装标识（GAID、TDID、install_uuid、device_id5）。上述标识仅用于设备去重、安装与留存统计，不用于跨应用追踪或商业营销。<strong>收集频次：</strong>仅在您同意后应用冷启动初始化 SDK 时采集 1 次，网络请求产生当次连接 IP，不在后台静默持续采集。</li>
+            <li><strong>设备与系统信息（明确包含收集读取 OAID）：</strong><strong>OAID（开放匿名设备标识符，由 TapSDK 内置 <code>tap-themislite</code> 组件通过系统接口收集读取）</strong>、<strong>AndroidID</strong>、<strong>GAID</strong>、系统版本、设备型号、设备 CPU 信息、设备内存信息、网络类型、Wi-Fi 信息、设备版本、手机样式、传感器列表、网络请求产生的 IP 地址，以及 TapSDK 生成的匿名设备/安装标识（<code>TDID</code>、<code>OneID</code>、<code>install_uuid</code>、<code>device_id5</code>）。上述标识仅用于设备去重、安装与留存统计及兼容性排查，不用于跨应用追踪、个性化推荐或商业广告营销。<strong>收集频次：</strong>仅在您同意后应用冷启动初始化 SDK 时采集 1 次，网络请求产生当次连接 IP，不在后台静默持续采集。</li>
             <li><strong>游戏内事件：</strong>仅包含以下 7 个自定义事件：<code>stage_start</code>（关卡开始）、<code>stage_result</code>（关卡结果）、<code>tower_build</code>（炮塔建造）、<code>tower_upgrade</code>（炮塔升级）、<code>loadout_save</code>（编队保存）、<code>talent_upgrade</code>（天赋点亮）、<code>talent_reset</code>（天赋重置），以及 TapDB 在初始化和前后台切换时记录的设备活跃事件。事件属性仅包含关卡编号、章节、地貌、天气、胜负、星级、生命、波次、时长、炮塔或天赋编号、等级与操作类型，不含任何自由输入文本。<strong>收集频次：</strong>仅在玩家发生上述对应操作时单次上报，无后台定时轮询。</li>
           </ul>
         </li>
@@ -103,11 +103,11 @@
       <h3>《第三方信息共享清单》</h3>
       <ul>
         <li>
-          <strong>SDK 名称：</strong>TapSDK / TapDB（<code>com.taptap.sdk:tap-core</code>）<br />
+          <strong>SDK 名称：</strong>TapSDK / TapDB（<code>com.taptap.sdk:tap-core</code>，含内置设备标识组件 <code>com.taptap.sdk:tap-themislite</code>）<br />
           <strong>第三方名称：</strong>易玩（上海）网络科技有限公司<br />
-          <strong>收集信息类型：</strong>本机随机匿名统计安装 ID、系统版本、设备型号、设备 CPU 信息、设备内存信息、网络类型、Wi-Fi 信息、AndroidID、OAID、设备版本、手机样式、传感器列表、网络请求产生的 IP 地址、SDK 生成的匿名设备/安装标识（GAID、TDID、install_uuid、device_id5），以及 7 项游戏内自定义事件（<code>stage_start</code>、<code>stage_result</code>、<code>tower_build</code>、<code>tower_upgrade</code>、<code>loadout_save</code>、<code>talent_upgrade</code>、<code>talent_reset</code>）和设备活跃事件<br />
-          <strong>功能用途：</strong>设备兼容性排查、运行稳定性分析、安装与留存统计、关卡难度与玩法体验分析<br />
-          <strong>收集方式与频次：</strong>仅在您勾选同意并点击“同意并启用”后初始化采集；设备与系统基础信息在冷启动初始化时采集 1 次，游戏内事件仅在对应玩家操作时单次上报，无后台轮询<br />
+          <strong>收集信息类型：</strong><strong>OAID（开放匿名设备标识符，由内置 <code>tap-themislite</code> 组件读取）</strong>、<strong>AndroidID</strong>、<strong>GAID</strong>、本机随机匿名统计安装 ID、系统版本、设备型号、设备 CPU 信息、设备内存信息、网络类型、Wi-Fi 信息、设备版本、手机样式、传感器列表、网络请求产生的 IP 地址、SDK 生成的匿名设备/安装标识（<code>TDID</code>、<code>OneID</code>、<code>install_uuid</code>、<code>device_id5</code>），以及 7 项游戏内自定义事件（<code>stage_start</code>、<code>stage_result</code>、<code>tower_build</code>、<code>tower_upgrade</code>、<code>loadout_save</code>、<code>talent_upgrade</code>、<code>talent_reset</code>）和设备活跃事件<br />
+          <strong>功能用途：</strong>设备去重、安装与留存统计、设备兼容性排查、运行稳定性分析、关卡难度与玩法体验分析<br />
+          <strong>收集方式与频次：</strong>仅在您勾选同意并点击“同意并启用”后初始化采集；OAID 及设备与系统基础信息在冷启动初始化时采集 1 次，游戏内事件仅在对应玩家操作时单次上报，无后台轮询<br />
           <strong>官方网址：</strong><a href="https://www.taptap.cn/" target="_blank" rel="noopener noreferrer">https://www.taptap.cn/</a><br />
           <strong>隐私政策协议链接：</strong><a href="https://developer.taptap.cn/docs/sdk/start/agreement/" target="_blank" rel="noopener noreferrer">https://developer.taptap.cn/docs/sdk/start/agreement/</a>
         </li>
@@ -126,7 +126,7 @@
 
       <h2>七、本地存储、广告与自动化决策</h2>
       <p>本游戏不使用 Cookie，不接入任何广告模块或内购支付，不进行用户画像与自动化决策。游戏仅使用设备本地存储保存进度、设置和授权状态，您可通过清除应用数据或卸载游戏删除。</p>
-      <p>AndroidID、OAID、GAID、TDID、install_uuid、device_id5 设备标识仅用于设备去重、安装和统计分析，不用于跨应用追踪或商业营销；TapTap 评价入口仅用于响应您主动发起的评价操作。</p>
+      <p>OAID（开放匿名设备标识符）、AndroidID、GAID、TDID、OneID、install_uuid、device_id5 设备标识仅用于设备去重、安装留存和统计分析，不用于跨应用追踪、个性化广告或商业营销；TapTap 评价入口仅用于响应您主动发起的评价操作。</p>
 
       <h2>八、您的权利</h2>
       <p>您有权访问、复制、更正、删除您的个人信息，撤回统计同意，并要求我们解释数据处理规则。本地数据可通过“清除应用数据”或卸载游戏删除；已上报至 TapDB 的数据，可通过联系邮箱提交删除或查询请求，并提供设备型号、大致使用时间和请求内容。由于本游戏没有账号，部分历史统计可能无法精确对应到特定个人，我们会按法律要求协助处理并说明结果。</p>
